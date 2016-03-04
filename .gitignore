@@ -1,0 +1,10 @@
+Makefile
+Makefile.Release
+*.Debug
+*.Release
+*.obj
+release/*
+debug/*
+ui_*.h
+*.pro.user
+*.autosave
