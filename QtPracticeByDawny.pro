@@ -13,11 +13,13 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    ticker.cpp
 
 HEADERS  += mainwindow.h \
     zstring.h \
     cfunctions.h \
-    dbg_byZed.h
+    dbg_byZed.h \
+    ticker.h
 
 FORMS    += mainwindow.ui
