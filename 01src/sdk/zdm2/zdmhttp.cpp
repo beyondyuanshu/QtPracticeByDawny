@@ -82,7 +82,7 @@ static size_t curl_read_func(void *buf, size_t size, size_t nmemb, void *p) {
 int ZDMHttp::get(char *url, QDataStream &out) {
     CURLcode r;
     CURL *curl;
-    DBG("get <%s>\n", url);
+//    DBG("get <%s>\n", url);
     curl = curl_easy_init();
     if(curl == NULL) {
         return CURLE_FAILED_INIT;
@@ -99,7 +99,7 @@ int ZDMHttp::get(char *url, QDataStream &out) {
     curl_easy_setopt(curl, CURLOPT_WRITEDATA, (void *)&out);
 
     r = curl_easy_perform(curl);
-    DBG("curl get returns %d\n", r);
+//    DBG("curl get returns %d\n", r);
     curl_easy_cleanup(curl);
 
     return r;
