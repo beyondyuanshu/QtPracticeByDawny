@@ -15,6 +15,7 @@ SUBDIRS += tests
 DEFINES += CMD_DEBUG
 CONFIG += console
 
+INCLUDEPATH += $$PWD/includes
 INCLUDEPATH += $$PWD/curl/include/curl
 INCLUDEPATH += $$PWD/zdm2
 INCLUDEPATH += $$PWD/QJson
@@ -73,3 +74,5 @@ HEADERS  += mainwindow.h \
     qtutil.h
 
 FORMS    += mainwindow.ui
+
+include (includes/inc.pri)

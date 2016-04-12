@@ -18,6 +18,7 @@
 #include "zdmhttptest.h"
 #include "zdmhttp.h"
 #include "qtutil.h"
+#include "singleton.h"
 
 static QString calcMd5(const QByteArray& in, int times) {
     int r = times;
@@ -38,6 +39,13 @@ static QString fromGBK(const QByteArray& data) {
     return c->toUnicode(data);
 }
 
+void fuc1(int i) {
+    qDebug() << i;
+}
+
+void fuc1(unsigned int i) {
+    qDebug() << i;
+}
 
 int main(int argc, char *argv[])
 {
@@ -45,8 +53,14 @@ int main(int argc, char *argv[])
     //    MainWindow w;
     //    w.show();
 
-    QString key = calcMd5(QString("%1%2%3").arg("luwei1").arg("315098").arg(10).toUtf8(), 1);
-    qDebug() << key << endl;
+    fuc1(100);
+
+//    LazySingleton *laz = LazySingleton::getInstancePtr();
+
+//    LazySingleton::getInstance();
+
+//    QString key = calcMd5(QString("%1%2%3").arg("luwei1").arg("315098").arg(10).toUtf8(), 1);
+//    qDebug() << key << endl;
 
 
 //    QUrl url("http://sjapk.dengxian.net/install.aspx?agg_id=&id=2588,2564,2603,2440,2442,2563,2334,2571,2567,2536,2420,2262,2604,2471,2315,2602,2537,2531,2518,2360,2598,2286,2589,2314,2594,2525,2579&imei=861054033253431&pwd=834278DE521BAA25062194902110A99F&userid=wh6688&ver=v3.2.9&key=E30B82803EA684AC64DEF0B83E1DCFD9&brand=letv&model=letv%20x501&version_release=5.0.2&version_sdk=21&rooted=0&agged=0&mac=74-D4-35-43-C9-C3&hwid=&sys=linux&cmd=1");

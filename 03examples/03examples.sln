@@ -1,0 +1,28 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "runonce", "D:/06Git/01GitHub/QtPracticeByDawny/03examples/runonce\runonce.vcxproj", "{CDC2D232-45BE-3C68-8A8A-D53649BDE6E7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "runonce", "D:/06Git/01GitHub/QtPracticeByDawny/03examples/singleton\runonce.vcxproj", "{BC9418C2-BDC4-3FBB-AE88-07B36A535DFA}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug|Win32
+		ConfigName.1 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{CDC2D232-45BE-3C68-8A8A-D53649BDE6E7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CDC2D232-45BE-3C68-8A8A-D53649BDE6E7}.Debug|Win32.Build.0 = Debug|Win32
+		{CDC2D232-45BE-3C68-8A8A-D53649BDE6E7}.Release|Win32.ActiveCfg = Release|Win32
+		{CDC2D232-45BE-3C68-8A8A-D53649BDE6E7}.Release|Win32.Build.0 = Release|Win32
+		{BC9418C2-BDC4-3FBB-AE88-07B36A535DFA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BC9418C2-BDC4-3FBB-AE88-07B36A535DFA}.Debug|Win32.Build.0 = Debug|Win32
+		{BC9418C2-BDC4-3FBB-AE88-07B36A535DFA}.Release|Win32.ActiveCfg = Release|Win32
+		{BC9418C2-BDC4-3FBB-AE88-07B36A535DFA}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
