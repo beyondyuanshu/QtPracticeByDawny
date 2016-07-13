@@ -21,6 +21,7 @@ public:
 
     static int postFile(char *url, const QString& path, QDataStream &out);
     static int postFile(char *url, const QString& path, QByteArray &out);
+    static int postFileByMutltiformpost(char *url, const QString &path, QByteArray &out);
 
     static int postData(char *url, QByteArray &in, QStringList &headers, QByteArray &out);
 };
